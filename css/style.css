@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.header {
+    background-image: url(../images/header-image.jpg);
+    background-size: 100% 100%;
+    height: 100vh;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+}
+.header .navbar ul {
+    display: flex;
+    color: white;
+    list-style-type: none;
+}
+.header .navbar li {
+    padding: 40px;
+}
+
+.header .banner-image-center-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header .header-heading .header-main-heading {
+    font-size: 60px;
+    font-weight: 700;
+}
+.header .header-heading .header-sub-heading {
+    font-size: 40px;
+
+}
+
+/* banner-icon */
+.header .banner-icons p {
+    color: white;
+    text-align: center;
+}
+.header .banner-icons  .banner-icon-image img {
+    width: 70px;
+    height: 70px;
+    background: white;
+    text-align: center;
+}
+.header .banner-icons .banner-icons-wrapper {
+    width: 150px;
+    text-align: center;
+    margin: 20px;
+}
+.header .banner-icons .banner-icons-wrapper p {
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+/* sponsor child */
+.sponsor-child .child-slider-section .child-info .child-display-profile {
+        width: 200px;
+        height: 100px;
+        background: red;
+        border-radius: 100px / 50px;
+        
+}
+.sponsor-child .sponsor-section-heading {
+    font-size: 30px;
+}
+.sponsor-child img {
+    width: 50px;
+}
+
+.sponsor-child .donation-amount .donation-button a {
+    padding: 10px 40px;
+    background-color: red;
+    border-radius: 20px;
+    color: white;
+}
+.sponsor-child .donation-amount .amount {
+    font-size: 20px;
+    color: black;
+}
+.sponsor-child .sponsor-child-footer ul li img {
+    width: 25px;
+}
+.sponsor-child .sponsor-child-footer ul li {
+    padding-right: 20px;
+}
+
+/* account */
+.account {
+    background-image: url(../images/bg.png);
+    background-size: 100% 100%;
+}
+.account .account-heading {
+    font-size: 40px;
+    padding: 40px 0px 30px 0px;
+    font-weight: 700;
+}
+.account .account-main-wrapper img {
+    width: 70px;
+    text-align: center;
+}
+.account .account-main-wrapper {
+    box-shadow: 0px 10px 30px 0px rgb(201 201 201 / 48%);
+    padding: 40px;
+    background-color: white;
+    border-radius: 20px;
+}
+.account .account-main-wrapper .account-main-heading {
+    font-size: 20px;
+    padding-bottom: 10px;
+} 
+
+/* testimonial */
+.testimonial .testimonial-heading {
+    font-size: 40px;
+    padding-top: 70px;
+}
+.testimonial .testimonial-wrapper .quote img {
+    width: 50px;
+}
+
