@@ -60,12 +60,8 @@
 }
 
 /* sponsor child */
-.sponsor-child .child-slider-section .child-info .child-display-profile {
-        width: 200px;
-        height: 100px;
-        background: red;
-        border-radius: 100px / 50px;
-        
+.sponsor-child .child-slider-section .child-info .child img {
+        width: 110px;
 }
 .sponsor-child .sponsor-section-heading {
     font-size: 30px;
@@ -95,6 +91,7 @@
 .account {
     background-image: url(../images/bg.png);
     background-size: 100% 100%;
+    padding-bottom: 70px;
 }
 .account .account-heading {
     font-size: 40px;
@@ -116,7 +113,29 @@
     padding-bottom: 10px;
 } 
 
+/* what sponsorship */
+.what-sponsorship {
+    background-image: url(../images/sponsonship-image.jpg);
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+    padding-bottom: 20px;
+    
+}
+.what-sponsorship .sponsorship-heading {
+    font-size: 30px;
+    padding-top: 50px;
+}
+.what-sponsorship .sponsorship-content {
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+
 /* testimonial */
+.testimonial {
+    height: 620px;
+}
 .testimonial .testimonial-heading {
     font-size: 40px;
     padding-top: 70px;
@@ -124,4 +143,48 @@
 .testimonial .testimonial-wrapper .quote img {
     width: 50px;
 }
+.testimonial .testimonial-wrapper .testimonial-message {
+    position: relative;
+    max-width: 40em;
+    background-color: #fff;
+    padding: 1.125em 1.5em;
+    font-size: 1.25em;
+    border-radius: 1rem;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
+    left: 23%;
+    top: 40px;
+    font-size: 16px;
+}
+.testimonial .testimonial-wrapper .testimonial-message::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 100%;
+    left: 17.5em;
+    border: 0.75rem solid transparent;
+    border-top: none;
+    border-bottom-color: #fff;
+    filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, 0.1));
+}
+.testimonial .testimonial-wrapper .testimonial-message .testimonial-message-name {
+    color: red;
+    padding-top: 20px;
+} 
 
+
+
+/* footer */
+.footer {
+    padding-top: 50px;
+}
+.footer .footer-company-logo img {
+    width: 70px;
+}
+
+.footer .footer-heading {
+    font-size: 25px;
+}
+.footer .footer-text-field {
+    border-radius: 40px;
+}
