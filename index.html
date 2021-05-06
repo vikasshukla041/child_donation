@@ -32,7 +32,7 @@
             <div class="banner-img">
 
             </div>
-            <div class="navbar">
+            <div class="navigation-bar">
                 <ul>
                     <li>About US</li>
                     <li>Child Sponsorship</li>
@@ -41,15 +41,47 @@
                 </ul>
             </div>
 
+            <!-- responsive navbar -->
+
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Brand</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="https://codepen.io">About</a>
+                            <a class="dropdown-toggle " href="#" id="dropdownMenuLink" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"></a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="https://codepen.io">About US</a>
+                                <a class="dropdown-item" href="#">Child Sponsorship</a>
+                                <a class="dropdown-item" href="#">FAQs</a>
+                                <a class="dropdowm-item" href="#">Contact US</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- responsive navbar ending -->
+
             <div class="banner-image-center-content">
                 <div class="header-heading">
                     <p class="header-main-heading text-white text-center">Building A Nation</p>
                     <p class="header-sub-heading text-white text-center">Fit For Children</p>
                 </div>
                 <div class="banner-icons">
-                    <div class="banner-icon-first-wrapper d-flex">
+                    <div class="banner-icon-first-wrapper d-flex justify-content-center">
                         <div class="banner-icons-wrapper">
-                            <div class="banner-icon-image w-100">
+                            <div class="banner-icon-image">
                                 <img src="./images/handshake.png" />
                             </div>
                             <p>Transforming 6200 Countries</p>
@@ -96,40 +128,58 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div class="child-info d-flex justify-content-center">
-                                    <div class="child"><img src="./images/men-pic.png" /></div>
-                                    <div class="child-name pl-5">
-                                        <ul class="text-left">
-                                            <li>Rohit</li>
-                                            <li>!0 year, Boy</li>
-                                            <li>Project: Community Sponsorship</li>
-                                            <li>Plan</li>
-                                        </ul>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="child"><img src="./images/men-pic.png" /></div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12 child-name">
+                                            <div class="child-name">
+                                                <ul class="text left">
+                                                    <li>Rohit</li>
+                                                    <li>!0 year, Boy</li>
+                                                    <li>Project: Community Sponsorship</li>
+                                                    <li>Plan</li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <div class="child-info d-flex justify-content-center">
-                                    <div class="child"><img src="./images/men-pic.png" /></div>
-                                    <div class="child-name pl-5">
-                                        <ul class="text-left">
-                                            <li>Rohit</li>
-                                            <li>!0 year, Boy</li>
-                                            <li>Project: Community Sponsorship</li>
-                                            <li>Plan</li>
-                                        </ul>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="child"><img src="./images/men-pic.png" /></div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12 child-name">
+                                            <div class="child-name">
+                                                <ul class="text left">
+                                                    <li>purohit</li>
+                                                    <li>!0 year, Boy</li>
+                                                    <li>Project: Community Sponsorship</li>
+                                                    <li>Plan</li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <div class="child-info d-flex justify-content-center">
-                                    <div class="child"><img src="./images/men-pic.png" /></div>
-                                    <div class="child-name pl-5">
-                                        <ul class="text-left">
-                                            <li>Rohit</li>
-                                            <li>!0 year, Boy</li>
-                                            <li>Project: Community Sponsorship</li>
-                                            <li>Plan</li>
-                                        </ul>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="child"><img src="./images/men-pic.png" /></div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12 child-name">
+                                            <div class="child-name">
+                                                <ul class="text left">
+                                                    <li>Mohit</li>
+                                                    <li>!0 year, Boy</li>
+                                                    <li>Project: Community Sponsorship</li>
+                                                    <li>Plan</li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -152,7 +202,7 @@
                             <p><img src="./images/single-child.png" class="pr-3" />Select a child of your choice</p>
                         </div>
                         <div class="col-6">
-                            <p><img src="./images/group.png" class="pr-3" />Any child of World Vision India's choice</p>
+                            <p><img src="./images/group.png" class="pr-3" />Any child of India's choice</p>
                         </div>
                     </div>
                 </div>
@@ -180,12 +230,12 @@
         <section class="account pt-5">
             <div class="container">
                 <div class="row">
-                    <div class="col">
+                    <div class="col-md-12 col-sm-12">
                         <p class="text-center account-heading">Why Most People Choose Our Charity</p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-4 account-main-wrapper">
+                    <div class="col-md-4 col-sm-12 account-main-wrapper">
                         <div class="account-wrapper-image text-center"><img src="./images/account.png" /></div>
                         <p class="border-bottom account-main-heading pt-3">Accountability & Transparency</p>
                         <div class="account-section-content">
@@ -194,7 +244,7 @@
                             <p class="text-center"><a href="#">Know More</a></p>
                         </div>
                     </div>
-                    <div class="col-4 account-main-wrapper">
+                    <div class="col-md-4 col-sm-12 account-main-wrapper">
                         <div class="account-wrapper-image text-center"><img src="./images/tax.jpg" /></div>
                         <p class="border-bottom account-main-heading pt-3 text-center">Tax Benefits</p>
                         <div class="account-section-content">
@@ -202,9 +252,9 @@
                                 and transparency.</p>
                         </div>
                     </div>
-                    <div class="col-4 account-main-wrapper">
+                    <div class="col-md-4 col-sm-12 account-main-wrapper">
                         <div class="account-wrapper-image text-center"><img src="./images/account.png" /></div>
-                        <p class="border-bottom account-main-heading pt-3">How your money is spent</p>
+                        <p class="border-bottom account-main-heading pt-3 text-center">How your money is spent</p>
                         <div class="account-section-content">
                             <p class="text-center">World Vision India is committed to high standards of accountability
                                 and transparency.</p>
@@ -260,7 +310,7 @@
                 </div>
             </div>
         </section> -->
-        <section class="carousel">
+        <section class="carousel testimonial">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -357,7 +407,7 @@
         <section class="footer bg-dark pb-5">
             <div class="container text-white">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-md-4 col-sm-12">
                         <div class="footer-company-logo d-flex">
                             <img src="./images/donate.png" />
                             <p class="text-white pt-4 pl-3">Donate</p>
@@ -365,7 +415,7 @@
                         <p><small>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                                 has been the industry's standard dummy</small></p>
                     </div>
-                    <div class="col-4">
+                    <div class="col-md-4 col-sm-12">
                         <p class="footer-heading">EXPLORE</p>
                         <ul>
                             <li>HOME</li>
@@ -373,9 +423,9 @@
                             <li>CONTACT US</li>
                         </ul>
                     </div>
-                    <div class="col-4">
+                    <div class="col-md-4 col-sm-12">
                         <p class="footer-heading">NEWSLETTER</p>
-                        <input type="text" class="footer-text-field" />
+                        <input type="text" class="footer-text-field w-100" />
                     </div>
                 </div>
             </div>

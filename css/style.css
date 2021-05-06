@@ -13,12 +13,15 @@
     background-attachment: fixed;
     background-position: center;
 }
-.header .navbar ul {
+.header .navbar {
+    display: none !important;
+}
+.header .navigation-bar ul {
     display: flex;
     color: white;
     list-style-type: none;
 }
-.header .navbar li {
+.header .navigation-bar li {
     padding: 40px;
 }
 
@@ -27,14 +30,15 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
 }
 
 .header .header-heading .header-main-heading {
-    font-size: 60px;
+    font-size: 5vw;
     font-weight: 700;
 }
 .header .header-heading .header-sub-heading {
-    font-size: 40px;
+    font-size: 3vw;
 
 }
 
@@ -62,6 +66,9 @@
 /* sponsor child */
 .sponsor-child .child-slider-section .child-info .child img {
         width: 110px;
+}
+.sponsor-child .child-slider-section .child-info .child-name {
+    text-align: left;
 }
 .sponsor-child .sponsor-section-heading {
     font-size: 30px;
@@ -147,7 +154,7 @@
 }
 .testimonial .testimonial-wrapper .testimonial-message {
     position: relative;
-    max-width: 40em;
+    /* max-width: 60%; */
     background-color: #fff;
     padding: 1.125em 1.5em;
     font-size: 1.25em;
@@ -156,6 +163,7 @@
     left: 23%;
     top: 40px;
     font-size: 16px;
+    width: 665px;
 }
 .testimonial .testimonial-wrapper .testimonial-message::before {
     content: "";
@@ -189,4 +197,52 @@
 }
 .footer .footer-text-field {
     border-radius: 40px;
+}
+
+
+@media screen and (max-width : 640px) {
+    .header .navbar {
+        display: block !important;
+        position: fixed;
+        left: 0;
+        right: 0;
+        z-index: 999;
+    }
+    .header .navbar .navbar-toggler {
+        float: right;
+    }
+    .header .navigation-bar {
+        display: none;
+    }
+    .header .header-heading .header-main-heading {
+        font-size: 10vw;
+    }
+    .header .header-heading .header-sub-heading {
+        font-size: 8vw;
+    }
+    .header .banner-image-center-content .banner-icons {
+        display: none;
+    }
+    .account .account-main-wrapper {
+        margin: 20px;
+    }
+    .sponsor-child .child-slider-section .child-info .child-name {
+        text-align: center;
+        padding-top: 20px;
+    }
+    .sponsor-child .child-selection p {
+        line-height: 8px;
+    }
+    .testimonial {
+        height: 700px;
+    }
+    .testimonial .testimonial-wrapper .testimonial-message {
+        left: 0px;
+        width: 100%;
+        height: 200px;
+        overflow: scroll;
+    }
+    .testimonial .testimonial-wrapper .testimonial-message::before {
+        display: none;
+    }
 }
