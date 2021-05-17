@@ -19,6 +19,8 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
     <link rel="stylesheet" href="./css/style.css">
 
     <title>Sarvhitkari</title>
@@ -27,204 +29,235 @@
 <body>
     <div class="main-container">
 
-        <!-- header -->
-        <section class="header">
-            <div class="banner-img">
-
+        <!-- Navigation Bar Start -->
+        <div class="container-fluid navigation-bar-main-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-12 company-logo">
+                        <img src="./images/logo.png" />
+                    </div>
+                    <div class="col-md-9 col-sm-12 navigation-bar">
+                        <ul>
+                            <li class="active">About US</li>
+                            <li>Child Sponsorship</li>
+                            <li>FAQs</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="navigation-bar">
-                <ul>
-                    <li>About US</li>
-                    <li>Child Sponsorship</li>
-                    <li>FAQs</li>
-                    <li>Contact Us</li>
+        </div>
+        <!-- Navigation Bar End -->
+
+        <!-- responsive navbar start -->
+        <nav class="navbar responsive-custom-navbar navbar-expand-md">
+            <a class="navbar-brand" href="#"><img src="./images/logo.png" /></a>
+            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="https://codepen.io">About</a>
+                        <a class="dropdown-toggle " href="#" id="dropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"></a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="https://codepen.io">About US</a>
+                            <a class="dropdown-item" href="#">Child Sponsorship</a>
+                            <a class="dropdown-item" href="#">FAQs</a>
+                            <a class="dropdowm-item" href="#">Contact US</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
                 </ul>
             </div>
+        </nav>
+        <!-- responsive navbar ending -->
 
-            <!-- responsive navbar -->
-
-            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-                <a class="navbar-brand" href="#">Brand</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="https://codepen.io">About</a>
-                            <a class="dropdown-toggle " href="#" id="dropdownMenuLink" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false"></a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="https://codepen.io">About US</a>
-                                <a class="dropdown-item" href="#">Child Sponsorship</a>
-                                <a class="dropdown-item" href="#">FAQs</a>
-                                <a class="dropdowm-item" href="#">Contact US</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <!-- responsive navbar ending -->
-
-            <div class="banner-image-center-content">
-                <div class="header-heading">
-                    <p class="header-main-heading text-white text-center">Building A Nation</p>
-                    <p class="header-sub-heading text-white text-center">Fit For Children</p>
-                </div>
-                <div class="banner-icons">
-                    <div class="banner-icon-first-wrapper d-flex justify-content-center">
-                        <div class="banner-icons-wrapper">
-                            <div class="banner-icon-image">
-                                <img src="./images/handshake.png" />
-                            </div>
-                            <p>Transforming 6200 Countries</p>
+        <!-- header -->
+        <section class="header">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 custom-banner-image">
+                    <!-- banner-image-content start -->
+                    <div class="banner-image-center-content">
+                        <div class="header-heading">
+                            <p class="header-main-heading text-white text-left m-0">Building A Nation</p>
+                            <p class="header-sub-heading text-white text-left m-0">Fit For Children</p>
                         </div>
-                        <div class="banner-icons-wrapper">
-                            <div class="banner-icon-image">
-                                <img src="./images/handshake.png" />
+                        <div class="banner-icon-main-wrapper">
+                            <div class="banner-icons-wrapper">
+                                <div class="banner-icon-image">
+                                    <i class="fa fa-handshake-o fa-3x" aria-hidden="true"></i>
+                                </div>
+                                <p>Transforming 6200 Countries</p>
                             </div>
-                            <p>Transforming 6200 Countries</p>
-                        </div>
-                        <div class="banner-icons-wrapper">
-                            <div class="banner-icon-image">
-                                <img src="./images/handshake.png" />
+                            <div class="banner-icons-wrapper">
+                                <div class="banner-icon-image">
+                                    <i class="fa fa-handshake-o fa-3x" aria-hidden="true"></i>
+                                </div>
+                                <p>Transforming 6200 Countries</p>
                             </div>
-                            <p>Transforming 6200 Countries</p>
+                            <div class="banner-icons-wrapper">
+                                <div class="banner-icon-image">
+                                    <i class="fa fa-handshake-o fa-3x" aria-hidden="true"></i>
+                                </div>
+                                <p>Transforming 6200 Countries</p>
+                            </div>
+                            <div class="banner-icons-wrapper">
+                                <div class="banner-icon-image">
+                                    <i class="fa fa-handshake-o fa-3x" aria-hidden="true"></i>
+                                </div>
+                                <p>Transforming 6200 Countries</p>
+                            </div>
+                            <div class="banner-icons-wrapper">
+                                <div class="banner-icon-image">
+                                    <i class="fa fa-handshake-o fa-3x" aria-hidden="true"></i>
+                                </div>
+                                <p>Transforming 6200 Countries</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="banner-icon-second-wrapper d-flex justify-content-center">
-                        <div class="banner-icons-wrapper">
-                            <div class="banner-icon-image">
-                                <img src="./images/handshake.png" />
-                            </div>
-                            <p>Transforming 6200 Countries</p>
+                    <!-- banner image content end -->
+                </div>
+                <div class="col-md-3"></div>
+
+                <!-- sponsor child section start -->
+                <div class="col-md-5 col-sm-12 col-xs-12">
+                    <div class="container sponsor-child">
+                        <div class="sponsor-child-heading pb-3 pt-5">
+                            <p class="sponsor-section-heading text-center">SPONSOR A CHILD</p>
                         </div>
-                        <div class="banner-icons-wrapper">
-                            <div class="banner-icon-image">
-                                <img src="./images/handshake.png" />
+                        <div class="child-slider-section">
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="child-info d-flex justify-content-center">
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-12">
+                                                    <div class="child"><img src="./images/men-pic.png" /></div>
+                                                </div>
+                                                <div class="col-md-6 col-sm-12 child-name">
+                                                    <div class="child-name">
+                                                        <ul class="text left">
+                                                            <li>Rohit</li>
+                                                            <li>!0 year, Boy</li>
+                                                            <li>Project: Community Sponsorship</li>
+                                                            <li>Plan</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="child-info d-flex justify-content-center">
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-12">
+                                                    <div class="child"><img src="./images/men-pic.png" /></div>
+                                                </div>
+                                                <div class="col-md-6 col-sm-12 child-name">
+                                                    <div class="child-name">
+                                                        <ul class="text left">
+                                                            <li>purohit</li>
+                                                            <li>!0 year, Boy</li>
+                                                            <li>Project: Community Sponsorship</li>
+                                                            <li>Plan</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="child-info d-flex justify-content-center">
+                                            <div class="row">
+                                                <div class="col-md-6 col-sm-12">
+                                                    <div class="child"><img src="./images/men-pic.png" /></div>
+                                                </div>
+                                                <div class="col-md-6 col-sm-12 child-name">
+                                                    <div class="child-name">
+                                                        <ul class="text left">
+                                                            <li>Mohit</li>
+                                                            <li>!0 year, Boy</li>
+                                                            <li>Project: Community Sponsorship</li>
+                                                            <li>Plan</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                                    data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
                             </div>
-                            <p>Transforming 6200 Countries</p>
+                        </div>
+                        <div class="child-selection pt-4 text-center">
+                            <div class="row child-selection-option">
+                                <div class="col-6">
+                                    <p class="active"><i class="fa fa-users fa-2x pr-2 pb-2"
+                                            aria-hidden="true"></i>Select a
+                                        child
+                                        of your choice
+                                    </p>
+                                </div>
+                                <div class="col-6">
+                                    <p><i class="fa fa-users fa-2x pr-2 pb-2" aria-hidden="true"></i>Any child of
+                                        India's
+                                        choice
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="donation-amount border-bottom pb-3">
+                            <p class="amount">₹ 800</p>
+                            <p class="donation-button pt-3"><a href="#">SPONSOR NOW</a></p>
+                            <p class="donation-quotes text-danger pt-3 text-center">Child Sponsorship is a recurring
+                                giving and it's
+                                a
+                                long-term
+                                association with
+                                the child</p>
+                        </div>
+                        <div class="sponsor-child-footer text-center">
+                            <p>What your donations mean to Rohit and his community:</p>
+                            <ul class="d-flex justify-content-center">
+                                <li><img src="./images/food.png" class="pr-1" />Food</li>
+                                <li><img src="./images/food.png" class="pr-1" />Education</li>
+                                <li><img src="./images/food.png" class="pr-1" />Shelter</li>
+                                <li><img src="./images/food.png" class="pr-1" />Sanitation</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- sponsor a child -->
-        <section class="sponsor-child text-center text-dark jumbotron-fluid bg-light">
-            <div class="container">
-                <div class="sponsor-child-heading pb-3 pt-5">
-                    <p class="sponsor-section-heading">SPONSOR A CHILD</p>
-                </div>
-                <div class="child-slider-section">
-                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="child-info d-flex justify-content-center">
-                                    <div class="row">
-                                        <div class="col-md-6 col-sm-12">
-                                            <div class="child"><img src="./images/men-pic.png" /></div>
-                                        </div>
-                                        <div class="col-md-6 col-sm-12 child-name">
-                                            <div class="child-name">
-                                                <ul class="text left">
-                                                    <li>Rohit</li>
-                                                    <li>!0 year, Boy</li>
-                                                    <li>Project: Community Sponsorship</li>
-                                                    <li>Plan</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="child-info d-flex justify-content-center">
-                                    <div class="row">
-                                        <div class="col-md-6 col-sm-12">
-                                            <div class="child"><img src="./images/men-pic.png" /></div>
-                                        </div>
-                                        <div class="col-md-6 col-sm-12 child-name">
-                                            <div class="child-name">
-                                                <ul class="text left">
-                                                    <li>purohit</li>
-                                                    <li>!0 year, Boy</li>
-                                                    <li>Project: Community Sponsorship</li>
-                                                    <li>Plan</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="child-info d-flex justify-content-center">
-                                    <div class="row">
-                                        <div class="col-md-6 col-sm-12">
-                                            <div class="child"><img src="./images/men-pic.png" /></div>
-                                        </div>
-                                        <div class="col-md-6 col-sm-12 child-name">
-                                            <div class="child-name">
-                                                <ul class="text left">
-                                                    <li>Mohit</li>
-                                                    <li>!0 year, Boy</li>
-                                                    <li>Project: Community Sponsorship</li>
-                                                    <li>Plan</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
-                            data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
-                            data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="child-selection pt-4">
-                    <div class="row">
-                        <div class="col-6">
-                            <p><img src="./images/single-child.png" class="pr-3" />Select a child of your choice</p>
-                        </div>
-                        <div class="col-6">
-                            <p><img src="./images/group.png" class="pr-3" />Any child of India's choice</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="donation-amount border-bottom pb-3">
-                    <p class="amount">₹ 800</p>
-                    <p class="donation-button pt-3"><a href="#">SPONSOR NOW</a></p>
-                    <p class="donation-quotes text-danger pt-3">Child Sponsorship is a recurring giving and it's a
-                        long-term
-                        association with
-                        the child</p>
-                </div>
-                <div class="sponsor-child-footer text-center pt-5 pb-5">
-                    <p>What your donations mean to Rohit and his community:</p>
-                    <ul class="d-flex justify-content-center">
-                        <li><img src="./images/food.png" class="pr-1" />Food</li>
-                        <li><img src="./images/food.png" class="pr-1" />Education</li>
-                        <li><img src="./images/food.png" class="pr-1" />Shelter</li>
-                        <li><img src="./images/food.png" class="pr-1" />Sanitation</li>
-                    </ul>
-                </div>
-            </div>
+
+
+        <!-- banner line image -->
+        <section class="banner-line-section">
+            <img src="./images/bannerline.png" />
         </section>
+        <!-- banner line image end -->
+
+
+
 
         <!-- accountibilty -->
         <section class="account pt-5">
@@ -263,7 +296,30 @@
                     </div>
                 </div>
             </div>
+
+            <div class=" container our-promise col-md-4 col-sm-12 col-xs-12 text-center">
+                <div class="our-promise-image">
+                    <img src="./images/group.png" />
+                </div>
+                <div class="our-promise-heading">
+                    <h2 class="our-promise-main-heading">Our Promises to Children</h2>
+                    <p class="our-promise-sub-heading">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry</p>
+                </div>
+                <div class="our-promise-content">
+                    <ul>
+                        <li>Lorem Ipsum is simply dummy</li>
+                        <li>Lorem Ipsum is simply dummy text of the </li>
+                        <li>Lorem Ipsum is simply dummy text </li>
+                        <li>Lorem Ipsum is simply dumm</li>
+                        <li>Lorem Ipsum is simply dummy text of the</li>
+                    </ul>
+                </div>
+            </div>
         </section>
+
+
+
         <!-- what is sponsorship -->
         <section class="what-sponsorship">
             <div class="container">
@@ -310,7 +366,9 @@
                 </div>
             </div>
         </section> -->
-        <section class="carousel testimonial">
+
+        <!------------------------------------------------------- Carousel Here---------------------------------- -->
+        <section class="carousel">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -319,7 +377,7 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <section class="testimonial text-center bg-info">
+                        <section class="testimonial text-center">
                             <div class="container">
                                 <p class="testimonial-heading">What Sponsor are Saying</p>
                                 <div class="testimonial-wrapper">
@@ -345,7 +403,7 @@
                         </section>
                     </div>
                     <div class="carousel-item">
-                        <section class="testimonial text-center bg-info">
+                        <section class="testimonial text-center">
                             <div class="container">
                                 <p class="testimonial-heading">What Sponsor are Saying</p>
                                 <div class="testimonial-wrapper">
@@ -366,7 +424,7 @@
                         </section>
                     </div>
                     <div class="carousel-item">
-                        <section class="testimonial text-center bg-info">
+                        <section class="testimonial text-center">
                             <div class="container">
                                 <p class="testimonial-heading">What Sponsor are Saying</p>
                                 <div class="testimonial-wrapper">
