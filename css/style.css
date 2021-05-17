@@ -39,6 +39,7 @@ body {
 }
 .navigation-bar li {
     padding: 30px 20px 0;
+    cursor: pointer;
 }
 .navigation-bar-main-wrapper li:hover {
     color: red;
@@ -143,6 +144,15 @@ body {
     width: 70%;
     margin: auto;
 }
+.sponsor-child a {
+    text-decoration: none;
+    color: white;
+}
+.sponsor-child .carousel-control-prev-icon,
+.carousel-control-next-icon {
+    top: -10% !important;
+    position: absolute;
+}
 /* sponsor child end */
 
 
@@ -231,13 +241,18 @@ body {
 /* testimonial */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  height: 100px;
+  /* height: 100px;
   width: 100px;
   outline: black;
   background-size: 100%, 100%;
   border-radius: 50%;
   border: 1px solid black;
-  background-image: none;
+  background-image: none; */
+  width: 11px;
+    height: 20px;
+    top: 50%;
+    left: 50px;
+    background-image: none;
 }
 
 .carousel-control-next-icon:after
