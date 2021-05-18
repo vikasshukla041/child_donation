@@ -126,7 +126,7 @@ body {
 }
 .sponsor-child .donation-amount .amount {
     font-size: 20px;
-    color: black;
+    color: white;
 }
 .sponsor-child .sponsor-child-footer ul li img {
     width: 25px;
@@ -139,6 +139,9 @@ body {
     width: 70%;
     margin: auto;
 }
+.sponsor-child .child-selection {
+    height: 13%;
+}
 .sponsor-child .child-selection .child-selection-option p.active {
     border-bottom: 5px solid red;
     width: 70%;
@@ -148,11 +151,11 @@ body {
     text-decoration: none;
     color: white;
 }
-.sponsor-child .carousel-control-prev-icon,
+/* .sponsor-child .custom-carousel-prev .custom-carousel-prev-icon,
 .carousel-control-next-icon {
-    top: -10% !important;
+    top: -10%;
     position: absolute;
-}
+} */
 /* sponsor child end */
 
 
@@ -374,7 +377,6 @@ body {
         display: inline;
     }
     .navbar .navbar-toggler {
-        border-color: red !important;
         float: right;
     }
     .custom-toggler .navbar-toggler-icon {
@@ -436,18 +438,18 @@ body {
 
     /* accounts */
     .account {
-        margin-top: 30%;
+        margin-top: 40%;
     }
 
 
     .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  height: 50px;
+  /* height: 50px;
   width: 50px;
   outline: black;
   background-size: 100%, 100%;
   border-radius: 50%;
-  border: 1px solid black;
+  border: 1px solid black; */
   background-image: none;
 }
 
