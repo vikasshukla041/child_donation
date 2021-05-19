@@ -8,6 +8,11 @@ body {
     overflow-x: hidden;
 }
 
+.fa-chevron-right,.fa-chevron-left {
+    font-size: 30px;
+    color: red;
+}
+
 .header {
     background-image: url(../images/header-image.jpg);
     background-size: 100%;
